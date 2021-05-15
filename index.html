@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="UTF-8">
+        
+        <title>Calculator🧮</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>  
+
+</head>
+    <body>
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview" placeholder="0" style="overflow: scroll;">
+        </form>
+         <table>
+             <tr>
+                 <td>
+                     <div class="button" id='clean' onclick="clean()"><div class="inner">C</div>
+                 </td>
+                 <td><div class="button none" onclick="back()"><div class="inner">🔙</div></div></td>
+                  <td> <div class="button none" onclick="opt('/')"><div class="inner">➗</div></td> 
+                  <td> <div class="button none" onclick="opt('*')"><div class="inner">✖</div></td> 
+                </tr>
+
+                <tr>
+                    <td><div class="button none" onclick="insert(7)"><div class="inner">7</div></div></td>
+                  <td> <div class="button none" onclick="insert(8)"><div class="inner">8</div></td> 
+                  <td> <div class="button none" onclick="insert(9)"><div class="inner">9</div></td>
+                  <td> <div class="button none" onclick="insert('-')"><div class="inner">➖</div></td>
+                </tr>
+                <tr>
+                    <td><div class="button none" onclick="insert(4)"><div class="inner">4</div></div></td>
+                  <td> <div class="button none" onclick="insert(5)"><div class="inner">5</div></td> 
+                  <td> <div class="button none" onclick="insert(6)"><div class="inner">6</div></td>
+                  <td rowspan="2" id="plus"> <div id="first" class="button none" onclick="insert('+')"><div class="inner">➕</div></td>
+                </tr>
+                <tr>
+                    <td><div class="button none" onclick="insert(1)"><div class="inner">1</div></div></td>
+                  <td> <div class="button none" onclick="insert(2)"><div class="inner">2</div></td> 
+                  <td> <div class="button none" onclick="insert(3)"><div class="inner">3</div></td>
+                
+                </tr>
+                <tr>
+                    <td> <div id="zero" class="button none" onclick="zero()"><div class="inner">0</div></td>
+                    <td> <div class="button none" onclick="insert('.')"><div class="inner">.</div></td>
+                    <td colspan="2" id="equal"> <div  id ="second"class="button none" onclick="equal()"><div class="inner">=</div></td>
+                </tr>
+         </table>    
+
+    </div>
+
+<div id= "copy">Shivani verma 🤗</div>
+    </body>
+</html>
